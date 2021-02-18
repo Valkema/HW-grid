@@ -15,6 +15,7 @@
     color: var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
+    grid-template-columns: 100%;
   }
   
   .wrapper {
@@ -34,6 +35,8 @@
   
   header .wrapper {
     width: 65%;
+    display: grid;
+    justify-items: center;
   }
   
   h1,
@@ -46,9 +49,7 @@
     font-size: 2em;
   }
   header p {
-    display: block;
     width: 80%;
-    margin: auto;
     padding-top: 35px;
     padding-bottom: 55px;
     font-size: 1em;
@@ -68,10 +69,13 @@
     background-color: var(--primary-color);
     color: var(--secondary-color);
   }
-  
-  #webDevelopment > .wrapper {
 
-    align-items: center;
+  #webDevelopment {
+    display: grid;
+    justify-items: center;
+  }
+
+  #webDevelopment > .wrapper {
     color: var(--secondary-color);
     padding: 15px 0 55px 0;
   }
